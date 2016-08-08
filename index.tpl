@@ -412,7 +412,7 @@
 		//<![CDATA[
 		
 		<!-- IF not S_LOGGED_IN -->
-		$(document).ready(function() {
+		$(function(){
 			/* Login Dialog */
 			$( "#dialog-login" ).dialog({
 				height: <!-- IF S_BRIDGE_INFO -->450<!-- ELSE -->350<!-- ENDIF -->,
@@ -474,7 +474,7 @@
 		var mymoment = moment(mmocms_user_timestamp_atom).utcOffset(mmocms_user_timezone);
 		
 		
-		$(document).ready(function() {
+		$(function(){
 			$('.notification-mark-all-read').on('click', function() {
 				$('.notification-content ul').html({L_notification_none|jsencode});
 				$('.notification-bubble-red, .notification-bubble-yellow, .notification-bubble-green').hide();
